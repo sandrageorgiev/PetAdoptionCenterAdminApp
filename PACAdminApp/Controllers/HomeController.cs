@@ -15,7 +15,7 @@ namespace PACAdminApp.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index","Pets");
         }
 
         public IActionResult Privacy()
