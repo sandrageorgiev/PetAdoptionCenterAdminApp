@@ -16,7 +16,7 @@ namespace PACAdminApp.Controllers
         {
             HttpClient client = new HttpClient();
 
-            string URL = "http://localhost:5195/api/PacAdmin/ListAllPets";
+            string URL = "https://petadoptioncenterapplication.azurewebsites.net/api/PacAdmin/ListAllPets";
 
             HttpResponseMessage response = client.GetAsync(URL).Result;
 
@@ -29,7 +29,7 @@ namespace PACAdminApp.Controllers
         {
             HttpClient client = new HttpClient();
 
-            string URL = "http://localhost:5195/api/PacAdmin/GetPetDetails/" + id.ToString();
+            string URL = "https://petadoptioncenterapplication.azurewebsites.net/api/PacAdmin/GetPetDetails/" + id.ToString();
 
             HttpResponseMessage response = client.GetAsync(URL).Result;
 
@@ -43,7 +43,7 @@ namespace PACAdminApp.Controllers
 
             HttpClient client = new HttpClient();
 
-            string URL = "http://localhost:5195/api/PacAdmin/GetPetDetails/" + id.ToString();
+            string URL = "https://petadoptioncenterapplication.azurewebsites.net/api/PacAdmin/GetPetDetails/" + id.ToString();
 
             HttpResponseMessage response = client.GetAsync(URL).Result;
 
@@ -88,7 +88,7 @@ namespace PACAdminApp.Controllers
 
                 HttpClient client = new HttpClient();
 
-                string URL = "http://localhost:5195/api/PacAdmin/ListAllPets";
+                string URL = "https://petadoptioncenterapplication.azurewebsites.net/api/PacAdmin/ListAllPets";
 
                 HttpResponseMessage response = client.GetAsync(URL).Result;
 
